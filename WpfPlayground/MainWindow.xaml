@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <!-- Use Canvas for painting? Use Ellipse? Use Arc? Put inside a border -->
     </Grid>
 </Window>

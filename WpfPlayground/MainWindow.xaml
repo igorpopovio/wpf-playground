@@ -11,15 +11,32 @@
         Background="#ECF0F1">
     <Grid>
         <!-- Use Canvas for painting? Use Ellipse? Use Arc? Put inside a border -->
-        <ed:Arc ArcThickness="1"
-                ArcThicknessUnit="Percent"
-                StartAngle="90"
-                EndAngle="360"
-                Fill="#3498DB"
-                Stroke="#1B76B2"
-                StrokeThickness="5"
-                Width="200"
-                Height="200"
-                Margin="100"/>
+        
+            <Path Stroke="Black"
+                  StrokeThickness="10"
+                  StrokeStartLineCap="Round"
+                  StrokeEndLineCap="Triangle"
+                  Stretch="Fill">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigure StartPoint="0,0">
+                                <PathFigure.Segments>
+                                    <PathSegmentCollection>
+                                        <ArcSegment Size="100,10"
+                                                    RotationAngle="0"
+                                                    IsLargeArc="False"
+                                                    SweepDirection="Clockwise"
+                                                    Point="100,300" />
+
+
+                                    </PathSegmentCollection>
+                                </PathFigure.Segments>
+                            </PathFigure>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+        
     </Grid>
 </Window>
